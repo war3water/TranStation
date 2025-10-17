@@ -1,0 +1,6 @@
+__pycache__/
+llmInput/
+*.pyc
+*.pyo
+*.pyd
+*.csv

@@ -1,0 +1,22 @@
+# ================================================================
+#               Configuration for the Backend Service
+# ================================================================
+
+# Global hotkey for triggering a screenshot action.
+# Key names should follow the `pynput` library's format.
+# Examples: "<cmd>+<shift>+s", "<ctrl>+<alt>+x"
+hotkey:
+  screenshot: "<alt>+q"
+
+
+# WebSocket server settings for communicating with the frontend.
+server:
+  host: "127.0.0.1"
+  port: 8765
+
+
+# Settings related to automated testing.
+testing:
+  # The directory where screenshots captured during unit tests will be saved.
+  # This path is relative to the project's root directory.
+  screenshot_output_path: "tests/output/"

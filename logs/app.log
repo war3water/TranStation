@@ -1,0 +1,362 @@
+2025-10-17 10:03:05 - [INFO] - MainThread - 日志系统初始化完成。
+2025-10-17 10:03:05 - [INFO] - MainThread - 配置文件 'config.yaml' 加载成功。
+2025-10-17 10:03:05 - [INFO] - MainThread - 服务启动中...
+2025-10-17 10:03:05 - [INFO] - HotkeyListenerThread - 快捷键监听器正在运行...
+2025-10-17 10:03:05 - [INFO] - WebSocketServerThread - WebSocket 服务器正在运行...
+2025-10-17 10:03:05 - [INFO] - MainThread - 所有服务已成功启动。程序正在运行...
+2025-10-17 10:03:05 - [INFO] - SelectionListenerThread - 划词监听器正在运行...
+2025-10-17 10:03:05 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666585.5425339 获取的模拟文本...'
+2025-10-17 10:03:05 - [CRITICAL] - MainThread - 程序启动时发生致命错误: 'hotkeys'
+Traceback (most recent call last):
+  File "D:\03_coding\02_code_work\10_translationTool\main.py", line 34, in main
+    logging.info(f"截图快捷键: {config['hotkeys']['screenshot']}")
+                                ~~~~~~^^^^^^^^^^^
+KeyError: 'hotkeys'
+2025-10-17 10:03:05 - [INFO] - MainThread - 正在等待所有服务线程停止...
+2025-10-17 10:03:05 - [INFO] - SelectionListenerThread - 监听到关闭信号，正在清理...
+2025-10-17 10:03:05 - [INFO] - WebSocketServerThread - WebSocket 服务器已停止。
+2025-10-17 10:03:05 - [INFO] - HotkeyListenerThread - 快捷键监听器已停止。
+2025-10-17 10:03:06 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:03:06 - [INFO] - SelectionListenerThread - 划词监听器已停止。
+2025-10-17 10:03:06 - [INFO] - MainThread - 服务已关闭。
+2025-10-17 10:04:17 - [INFO] - MainThread - 日志系统初始化完成。
+2025-10-17 10:04:17 - [INFO] - MainThread - 配置文件 'config.yaml' 加载成功。
+2025-10-17 10:04:17 - [INFO] - MainThread - 服务启动中...
+2025-10-17 10:04:17 - [INFO] - HotkeyListenerThread - 快捷键监听器正在运行...
+2025-10-17 10:04:17 - [INFO] - SelectionListenerThread - 划词监听器正在运行...
+2025-10-17 10:04:17 - [INFO] - WebSocketServerThread - WebSocket 服务器正在运行...
+2025-10-17 10:04:17 - [INFO] - MainThread - 所有服务已成功启动。程序正在运行...
+2025-10-17 10:04:17 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666657.0196111 获取的模拟文本...'
+2025-10-17 10:04:17 - [CRITICAL] - MainThread - 程序启动时发生致命错误: 'hotkeys'
+Traceback (most recent call last):
+  File "D:\03_coding\02_code_work\10_translationTool\main.py", line 34, in main
+    logging.info(f"截图快捷键: {config['hotkeys']['screenshot']}")
+                                ~~~~~~^^^^^^^^^^^
+KeyError: 'hotkeys'
+2025-10-17 10:04:17 - [INFO] - MainThread - 正在等待所有服务线程停止...
+2025-10-17 10:04:17 - [INFO] - SelectionListenerThread - 监听到关闭信号，正在清理...
+2025-10-17 10:04:17 - [INFO] - HotkeyListenerThread - 快捷键监听器已停止。
+2025-10-17 10:04:17 - [INFO] - WebSocketServerThread - WebSocket 服务器已停止。
+2025-10-17 10:04:18 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:04:18 - [INFO] - SelectionListenerThread - 划词监听器已停止。
+2025-10-17 10:04:18 - [INFO] - MainThread - 服务已关闭。
+2025-10-17 10:05:36 - [INFO] - MainThread - 日志系统初始化完成。
+2025-10-17 10:05:36 - [INFO] - MainThread - 配置文件 'config.yaml' 加载成功。
+2025-10-17 10:05:36 - [INFO] - MainThread - 服务启动中...
+2025-10-17 10:05:36 - [INFO] - HotkeyListenerThread - 快捷键监听器正在运行...
+2025-10-17 10:05:36 - [INFO] - SelectionListenerThread - 划词监听器正在运行...
+2025-10-17 10:05:36 - [INFO] - WebSocketServerThread - WebSocket 服务器正在运行...
+2025-10-17 10:05:36 - [INFO] - MainThread - 所有服务已成功启动。程序正在运行...
+2025-10-17 10:05:36 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666736.094467 获取的模拟文本...'
+2025-10-17 10:05:36 - [CRITICAL] - MainThread - 程序启动时发生致命错误: 'hotkeys'
+Traceback (most recent call last):
+  File "D:\03_coding\02_code_work\10_translationTool\main.py", line 34, in main
+    logging.info(f"截图快捷键: {config['hotkeys']['screenshot']}")
+                                ~~~~~~^^^^^^^^^^^
+KeyError: 'hotkeys'
+2025-10-17 10:05:36 - [INFO] - MainThread - 正在等待所有服务线程停止...
+2025-10-17 10:05:36 - [INFO] - HotkeyListenerThread - 快捷键监听器已停止。
+2025-10-17 10:05:36 - [INFO] - WebSocketServerThread - WebSocket 服务器已停止。
+2025-10-17 10:05:36 - [INFO] - SelectionListenerThread - 监听到关闭信号，正在清理...
+2025-10-17 10:05:37 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:05:37 - [INFO] - SelectionListenerThread - 划词监听器已停止。
+2025-10-17 10:05:37 - [INFO] - MainThread - 服务已关闭。
+2025-10-17 10:05:52 - [INFO] - MainThread - 日志系统初始化完成。
+2025-10-17 10:05:52 - [INFO] - MainThread - 配置文件 'config.yaml' 加载成功。
+2025-10-17 10:05:52 - [INFO] - MainThread - 服务启动中...
+2025-10-17 10:05:52 - [INFO] - HotkeyListenerThread - 快捷键监听器正在运行...
+2025-10-17 10:05:52 - [INFO] - SelectionListenerThread - 划词监听器正在运行...
+2025-10-17 10:05:52 - [INFO] - WebSocketServerThread - WebSocket 服务器正在运行...
+2025-10-17 10:05:52 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666752.3443844 获取的模拟文本...'
+2025-10-17 10:05:52 - [INFO] - MainThread - 所有服务已成功启动。程序正在运行...
+2025-10-17 10:05:52 - [CRITICAL] - MainThread - 程序启动时发生致命错误: 'hotkeys'
+Traceback (most recent call last):
+  File "D:\03_coding\02_code_work\10_translationTool\main.py", line 34, in main
+    logging.info(f"截图快捷键: {config['hotkeys']['screenshot']}")
+                                ~~~~~~^^^^^^^^^^^
+KeyError: 'hotkeys'
+2025-10-17 10:05:52 - [INFO] - MainThread - 正在等待所有服务线程停止...
+2025-10-17 10:05:52 - [INFO] - WebSocketServerThread - WebSocket 服务器已停止。
+2025-10-17 10:05:52 - [INFO] - SelectionListenerThread - 监听到关闭信号，正在清理...
+2025-10-17 10:05:52 - [INFO] - HotkeyListenerThread - 快捷键监听器已停止。
+2025-10-17 10:05:53 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:05:53 - [INFO] - SelectionListenerThread - 划词监听器已停止。
+2025-10-17 10:05:53 - [INFO] - MainThread - 服务已关闭。
+2025-10-17 10:06:01 - [INFO] - MainThread - 日志系统初始化完成。
+2025-10-17 10:06:16 - [INFO] - MainThread - 配置文件 'config.yaml' 加载成功。
+2025-10-17 10:06:24 - [INFO] - MainThread - 服务启动中...
+2025-10-17 10:06:50 - [INFO] - HotkeyListenerThread - 快捷键监听器正在运行...
+2025-10-17 10:06:50 - [INFO] - SelectionListenerThread - 划词监听器正在运行...
+2025-10-17 10:06:50 - [INFO] - WebSocketServerThread - WebSocket 服务器正在运行...
+2025-10-17 10:06:50 - [INFO] - MainThread - 所有服务已成功启动。程序正在运行...
+2025-10-17 10:07:21 - [INFO] - MainThread - 日志系统初始化完成。
+2025-10-17 10:07:21 - [INFO] - MainThread - 配置文件 'config.yaml' 加载成功。
+2025-10-17 10:07:21 - [INFO] - MainThread - 服务启动中...
+2025-10-17 10:07:21 - [INFO] - HotkeyListenerThread - 快捷键监听器正在运行...
+2025-10-17 10:07:21 - [INFO] - SelectionListenerThread - 划词监听器正在运行...
+2025-10-17 10:07:21 - [INFO] - WebSocketServerThread - WebSocket 服务器正在运行...
+2025-10-17 10:07:21 - [INFO] - MainThread - 所有服务已成功启动。程序正在运行...
+2025-10-17 10:07:21 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666841.572654 获取的模拟文本...'
+2025-10-17 10:07:21 - [INFO] - MainThread - 截图快捷键: <alt>+q
+2025-10-17 10:07:21 - [INFO] - MainThread - 划词读取功能已激活。
+2025-10-17 10:07:21 - [INFO] - MainThread - 按 Ctrl+C 退出程序。
+2025-10-17 10:07:21 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666841.7655797 获取的模拟文本...'
+2025-10-17 10:07:21 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666841.9722683 获取的模拟文本...'
+2025-10-17 10:07:22 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666842.1768398 获取的模拟文本...'
+2025-10-17 10:07:22 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666842.3816054 获取的模拟文本...'
+2025-10-17 10:07:22 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:22 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666842.5917847 获取的模拟文本...'
+2025-10-17 10:07:22 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:22 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666842.7942693 获取的模拟文本...'
+2025-10-17 10:07:22 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:22 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666842.994789 获取的模拟文本...'
+2025-10-17 10:07:23 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:23 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666843.195013 获取的模拟文本...'
+2025-10-17 10:07:23 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:23 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666843.3951204 获取的模拟文本...'
+2025-10-17 10:07:23 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:23 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666843.6019986 获取的模拟文本...'
+2025-10-17 10:07:23 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:23 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666843.807955 获取的模拟文本...'
+2025-10-17 10:07:23 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:24 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666844.0157094 获取的模拟文本...'
+2025-10-17 10:07:24 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:24 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666844.2171028 获取的模拟文本...'
+2025-10-17 10:07:24 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:24 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666844.419967 获取的模拟文本...'
+2025-10-17 10:07:24 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:24 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666844.6251316 获取的模拟文本...'
+2025-10-17 10:07:24 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:24 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666844.8257673 获取的模拟文本...'
+2025-10-17 10:07:25 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:25 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666845.0260046 获取的模拟文本...'
+2025-10-17 10:07:25 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:25 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666845.2315543 获取的模拟文本...'
+2025-10-17 10:07:25 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:25 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666845.4392443 获取的模拟文本...'
+2025-10-17 10:07:25 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:25 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666845.6493633 获取的模拟文本...'
+2025-10-17 10:07:25 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:25 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666845.8495884 获取的模拟文本...'
+2025-10-17 10:07:26 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:26 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666846.049514 获取的模拟文本...'
+2025-10-17 10:07:26 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:26 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666846.2555351 获取的模拟文本...'
+2025-10-17 10:07:26 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:26 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666846.4614785 获取的模拟文本...'
+2025-10-17 10:07:26 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:26 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666846.6677706 获取的模拟文本...'
+2025-10-17 10:07:26 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:26 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666846.8704412 获取的模拟文本...'
+2025-10-17 10:07:27 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:27 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666847.0739508 获取的模拟文本...'
+2025-10-17 10:07:27 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:27 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666847.2740228 获取的模拟文本...'
+2025-10-17 10:07:27 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:27 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666847.4745464 获取的模拟文本...'
+2025-10-17 10:07:27 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:27 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666847.6820188 获取的模拟文本...'
+2025-10-17 10:07:27 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:27 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666847.8910007 获取的模拟文本...'
+2025-10-17 10:07:28 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:28 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666848.1047664 获取的模拟文本...'
+2025-10-17 10:07:28 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:28 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666848.3100188 获取的模拟文本...'
+2025-10-17 10:07:28 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:28 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666848.5134287 获取的模拟文本...'
+2025-10-17 10:07:28 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:28 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666848.7171164 获取的模拟文本...'
+2025-10-17 10:07:28 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:28 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666848.9254415 获取的模拟文本...'
+2025-10-17 10:07:29 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:29 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666849.1262472 获取的模拟文本...'
+2025-10-17 10:07:29 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:29 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666849.3322115 获取的模拟文本...'
+2025-10-17 10:07:29 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:29 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666849.5350661 获取的模拟文本...'
+2025-10-17 10:07:29 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:29 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666849.7406454 获取的模拟文本...'
+2025-10-17 10:07:29 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:29 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666849.9555428 获取的模拟文本...'
+2025-10-17 10:07:30 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:30 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666850.1624951 获取的模拟文本...'
+2025-10-17 10:07:30 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:30 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666850.3685465 获取的模拟文本...'
+2025-10-17 10:07:30 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:30 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666850.5745587 获取的模拟文本...'
+2025-10-17 10:07:30 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:30 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666850.7785802 获取的模拟文本...'
+2025-10-17 10:07:30 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:30 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666850.9901276 获取的模拟文本...'
+2025-10-17 10:07:31 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:31 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666851.1974456 获取的模拟文本...'
+2025-10-17 10:07:31 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:31 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666851.4232652 获取的模拟文本...'
+2025-10-17 10:07:31 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:31 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666851.635438 获取的模拟文本...'
+2025-10-17 10:07:31 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:31 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666851.8366601 获取的模拟文本...'
+2025-10-17 10:07:31 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:32 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666852.038643 获取的模拟文本...'
+2025-10-17 10:07:32 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:32 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666852.2434065 获取的模拟文本...'
+2025-10-17 10:07:32 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:32 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666852.443876 获取的模拟文本...'
+2025-10-17 10:07:32 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:32 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666852.6495152 获取的模拟文本...'
+2025-10-17 10:07:32 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:32 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666852.8619857 获取的模拟文本...'
+2025-10-17 10:07:33 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:33 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666853.0672255 获取的模拟文本...'
+2025-10-17 10:07:33 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:33 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666853.2673392 获取的模拟文本...'
+2025-10-17 10:07:33 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:33 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666853.4816635 获取的模拟文本...'
+2025-10-17 10:07:33 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:33 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666853.6948843 获取的模拟文本...'
+2025-10-17 10:07:33 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:33 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666853.8991773 获取的模拟文本...'
+2025-10-17 10:07:34 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:34 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666854.105897 获取的模拟文本...'
+2025-10-17 10:07:34 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:34 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666854.3098674 获取的模拟文本...'
+2025-10-17 10:07:34 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:34 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666854.5106719 获取的模拟文本...'
+2025-10-17 10:07:34 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:34 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666854.7157824 获取的模拟文本...'
+2025-10-17 10:07:34 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:34 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666854.919655 获取的模拟文本...'
+2025-10-17 10:07:35 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:35 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666855.1225371 获取的模拟文本...'
+2025-10-17 10:07:35 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:35 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666855.3382733 获取的模拟文本...'
+2025-10-17 10:07:35 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:35 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666855.5400612 获取的模拟文本...'
+2025-10-17 10:07:35 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:35 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666855.7418299 获取的模拟文本...'
+2025-10-17 10:07:35 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:35 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666855.9458063 获取的模拟文本...'
+2025-10-17 10:07:36 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:36 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666856.1460373 获取的模拟文本...'
+2025-10-17 10:07:36 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:36 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666856.3524194 获取的模拟文本...'
+2025-10-17 10:07:36 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:36 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666856.5648658 获取的模拟文本...'
+2025-10-17 10:07:36 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:36 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666856.7705457 获取的模拟文本...'
+2025-10-17 10:07:36 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:36 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666856.9805615 获取的模拟文本...'
+2025-10-17 10:07:37 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:37 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666857.1889477 获取的模拟文本...'
+2025-10-17 10:07:37 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:37 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666857.391084 获取的模拟文本...'
+2025-10-17 10:07:37 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:37 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666857.601075 获取的模拟文本...'
+2025-10-17 10:07:37 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:37 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666857.804198 获取的模拟文本...'
+2025-10-17 10:07:37 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:38 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666858.0055132 获取的模拟文本...'
+2025-10-17 10:07:38 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:38 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666858.2066727 获取的模拟文本...'
+2025-10-17 10:07:38 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:38 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666858.407613 获取的模拟文本...'
+2025-10-17 10:07:38 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:38 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666858.6163874 获取的模拟文本...'
+2025-10-17 10:07:38 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:38 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666858.8236332 获取的模拟文本...'
+2025-10-17 10:07:39 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:39 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666859.0387578 获取的模拟文本...'
+2025-10-17 10:07:39 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:39 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666859.2478461 获取的模拟文本...'
+2025-10-17 10:07:39 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:39 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666859.4624586 获取的模拟文本...'
+2025-10-17 10:07:39 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:39 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666859.6769588 获取的模拟文本...'
+2025-10-17 10:07:39 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:39 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666859.8898726 获取的模拟文本...'
+2025-10-17 10:07:40 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:40 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666860.090369 获取的模拟文本...'
+2025-10-17 10:07:40 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:40 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666860.291442 获取的模拟文本...'
+2025-10-17 10:07:40 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:40 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666860.4917812 获取的模拟文本...'
+2025-10-17 10:07:40 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:40 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666860.6976037 获取的模拟文本...'
+2025-10-17 10:07:40 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:40 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666860.9097838 获取的模拟文本...'
+2025-10-17 10:07:41 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:41 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666861.109982 获取的模拟文本...'
+2025-10-17 10:07:41 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:41 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666861.3191297 获取的模拟文本...'
+2025-10-17 10:07:41 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:41 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666861.5213933 获取的模拟文本...'
+2025-10-17 10:07:41 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:41 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666861.7229683 获取的模拟文本...'
+2025-10-17 10:07:41 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:41 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666861.9280844 获取的模拟文本...'
+2025-10-17 10:07:42 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:42 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666862.1368642 获取的模拟文本...'
+2025-10-17 10:07:42 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:42 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666862.3384705 获取的模拟文本...'
+2025-10-17 10:07:42 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:42 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666862.5438576 获取的模拟文本...'
+2025-10-17 10:07:42 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:42 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666862.748949 获取的模拟文本...'
+2025-10-17 10:07:42 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:42 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666862.961607 获取的模拟文本...'
+2025-10-17 10:07:43 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:43 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666863.1765769 获取的模拟文本...'
+2025-10-17 10:07:43 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:43 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666863.3765125 获取的模拟文本...'
+2025-10-17 10:07:43 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:43 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666863.5773911 获取的模拟文本...'
+2025-10-17 10:07:43 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:43 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666863.7808533 获取的模拟文本...'
+2025-10-17 10:07:43 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:43 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666863.9824789 获取的模拟文本...'
+2025-10-17 10:07:44 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:44 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666864.1858852 获取的模拟文本...'
+2025-10-17 10:07:44 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:44 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666864.393802 获取的模拟文本...'
+2025-10-17 10:07:44 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:44 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666864.5946352 获取的模拟文本...'
+2025-10-17 10:07:44 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:44 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666864.8020635 获取的模拟文本...'
+2025-10-17 10:07:44 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:45 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666865.004631 获取的模拟文本...'
+2025-10-17 10:07:45 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:45 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666865.2074125 获取的模拟文本...'
+2025-10-17 10:07:45 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:45 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666865.4100661 获取的模拟文本...'
+2025-10-17 10:07:45 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:45 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666865.6282966 获取的模拟文本...'
+2025-10-17 10:07:45 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:45 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666865.8304377 获取的模拟文本...'
+2025-10-17 10:07:46 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:46 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666866.0371723 获取的模拟文本...'
+2025-10-17 10:07:46 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:46 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666866.23752 获取的模拟文本...'
+2025-10-17 10:07:46 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:46 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666866.4409304 获取的模拟文本...'
+2025-10-17 10:07:46 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:46 - [INFO] - SelectionWorker_2 - 工作线程开始处理文本: '这是在 1760666866.641859 获取的模拟文本...'
+2025-10-17 10:07:46 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:46 - [INFO] - SelectionWorker_3 - 工作线程开始处理文本: '这是在 1760666866.853436 获取的模拟文本...'
+2025-10-17 10:07:47 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:47 - [INFO] - SelectionWorker_4 - 工作线程开始处理文本: '这是在 1760666867.0581462 获取的模拟文本...'
+2025-10-17 10:07:47 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:47 - [INFO] - SelectionWorker_0 - 工作线程开始处理文本: '这是在 1760666867.269661 获取的模拟文本...'
+2025-10-17 10:07:47 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:47 - [INFO] - SelectionWorker_1 - 工作线程开始处理文本: '这是在 1760666867.4734144 获取的模拟文本...'
+2025-10-17 10:07:47 - [DEBUG] - SelectionWorker_2 - 文本处理完毕。
+2025-10-17 10:07:47 - [INFO] - MainThread - 接收到退出信号 (Ctrl+C)，正在关闭服务...
+2025-10-17 10:07:47 - [INFO] - MainThread - 正在等待所有服务线程停止...
+2025-10-17 10:07:47 - [INFO] - WebSocketServerThread - WebSocket 服务器已停止。
+2025-10-17 10:07:47 - [INFO] - SelectionListenerThread - 监听到关闭信号，正在清理...
+2025-10-17 10:07:47 - [INFO] - HotkeyListenerThread - 快捷键监听器已停止。
+2025-10-17 10:07:47 - [DEBUG] - SelectionWorker_3 - 文本处理完毕。
+2025-10-17 10:07:48 - [DEBUG] - SelectionWorker_4 - 文本处理完毕。
+2025-10-17 10:07:48 - [DEBUG] - SelectionWorker_0 - 文本处理完毕。
+2025-10-17 10:07:48 - [DEBUG] - SelectionWorker_1 - 文本处理完毕。
+2025-10-17 10:07:48 - [INFO] - SelectionListenerThread - 划词监听器已停止。
+2025-10-17 10:07:48 - [INFO] - MainThread - 服务已关闭。

@@ -1,0 +1,28 @@
+# Conda environment configuration for the project
+# To create the environment, run:
+# > conda env create -f environment.yml
+# To activate the environment, run:
+# > conda activate selection_translator
+
+name: selection_translator
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.10    # Start with 3.10 for broad compatibility, can be raised to 3.11
+  - pip
+  - pillow
+  - pyyaml
+  - pytest
+  - pip:
+    - mss
+    - pynput
+    - websockets
+    - pywin32
+    - comtypes 
+    # Platform-specific dependencies will be handled by the application logic
+    # - pywin32; sys_platform == 'win32'
+    # - python-xlib; sys_platform == 'linux'
+    # - pyobjc-core; sys_platform == 'darwin'
+    # - pyobjc-framework-cocoa; sys_platform == 'darwin'
+
