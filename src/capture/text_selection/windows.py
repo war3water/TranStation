@@ -6,7 +6,8 @@ import comtypes.client
 import comtypes
 import ctypes
 from ctypes import wintypes
-from comtypes import BSTR
+# 关键修复：导入COM初始化所需的常量
+from comtypes import BSTR, COINIT_APARTMENTTHREADED
 
 # IAccessible 接口定义，当前版本中未使用，但保留用于未来可能的扩展
 # 为MSAA定义必要的常量和接口
@@ -70,20 +71,15 @@ def _find_text_selection_recursive(uia_element, uia_interface, tree_walker):
         if text_pattern_unknown:
             text_pattern = text_pattern_unknown.QueryInterface(uia_interface.IUIAutomationTextPattern)
             if text_pattern:
-                # 获取当前选区
                 selection = text_pattern.GetSelection()
-                # 关键检查：确保选区存在且长度大于0 (即不是一个简单的光标)
                 if selection and selection.Length > 0:
                     texts = [selection.GetElement(i).GetText(-1).strip() for i in range(selection.Length)]
                     full_text = "\n".join(filter(None, texts))
-                    # 确保提取到的文本不为空
                     if full_text:
                         return full_text, uia_element
     except comtypes.COMError:
-        # 查询Pattern失败是正常现象，静默处理
         pass
 
-    # 如果当前元素没有找到有效选区，则继续深度遍历其子元素
     if tree_walker:
         try:
             child = tree_walker.GetFirstChildElement(uia_element)
@@ -93,40 +89,42 @@ def _find_text_selection_recursive(uia_element, uia_interface, tree_walker):
                     return result
                 child = tree_walker.GetNextSiblingElement(child)
         except comtypes.COMError:
-            pass # 遍历子元素失败也是正常现象
+            pass
         
     return None
+
 
 def get_selected_text_windows() -> Optional[Dict[str, Any]]:
     """
     在 Windows 上通过 UI Automation (UIA) 的 TextPattern 精准获取选中的文本。
-    此版本移除了 ValuePattern 和 MSAA 回退，以避免在单击或取消划选时捕获非预期内容。
+    此版本已修复COM初始化问题，并增加了详细的调试日志。
     """
     UIAutomationClient = _initialize_uia()
     if not UIAutomationClient:
         return None
 
-    comtypes.CoInitializeEx()
+    # 关键修复: 为当前工作线程以单线程单元(STA)模式初始化COM
+    # 这是在非GUI主线程中稳定操作UI元素的必要条件
+    comtypes.CoInitializeEx(COINIT_APARTMENTTHREADED)
+    
     try:
         uia = comtypes.client.CreateObject(UIAutomationClient.CUIAutomation, interface=UIAutomationClient.IUIAutomation)
         try:
             focused_element = uia.GetFocusedElement()
         except comtypes.COMError as e:
             if e.hresult == -2147220991:
-                logging.warning("UIA 在与系统组件（如文件管理器）交互时无法获取焦点，已忽略本次捕获。")
-                return None # 安全退出
+                logging.debug("UIA无法获取焦点元素（例如桌面），此为正常情况。")
+                return None
             else:
-                # 对于其他未知COMError，仍然需要记录
                 raise
         
         if focused_element:
-            # --- 唯一策略: UIA TextPattern (深度遍历) ---
-            # 只使用最可靠的 RawViewWalker 进行全量UI元素遍历
             tree_walker = uia.RawViewWalker
             result = _find_text_selection_recursive(focused_element, UIAutomationClient, tree_walker)
             
             if result:
                 full_text, element = result
+                logging.info(f"成功捕获文本: '{full_text[:70].strip().replace('\n', ' ')}...'")
                 try:
                     window_title = element.CurrentName
                     app_name = element.CurrentClassName
@@ -140,20 +138,14 @@ def get_selected_text_windows() -> Optional[Dict[str, Any]]:
                     "metadata": {
                         "source_app_name": app_name,
                         "source_window_title": window_title,
-                        "method": "UIA_TextPattern_Precise" # 标记为精确模式
+                        "method": "UIA_TextPattern_Precise"
                     }
                 }
-            
-            # 核心修复：如果 UIA TextPattern 没有找到有效选区，则不再尝试任何其他方法。
-            # 这可以防止在单击(无选区)时，ValuePattern 或 MSAA 捕获整个文本框的内容。
-
     except Exception as e:
-        # 只记录错误，不让程序崩溃
-        logging.error(f"捕获划词内容时发生未知错误: {e}", exc_info=False)
+        # 关键修复: 打开 exc_info=True 以便看到完整的错误堆栈
+        logging.error(f"捕获划词内容时发生未知错误: {e}", exc_info=True)
     finally:
-        # 确保 COM 库被正确释放
+        # 确保COM库在此线程中被正确释放
         comtypes.CoUninitialize()
     
-    # 如果没有找到任何有效选区，则返回 None
     return None
-

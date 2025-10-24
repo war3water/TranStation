@@ -2,63 +2,87 @@
 import logging
 import threading
 import queue
+import math
 from pynput import mouse
-from typing import Callable, Dict, Any
+from typing import Callable, Dict, Any, Tuple, Optional
 from src.capture.text_selection import get_selected_text
 
 class SelectionListener:
     """
-    监听全局鼠标划词动作。
-    采用生产者-消费者模型，将pynput的事件回调与耗时的UIA操作解耦，
-    以解决 [WinError -2147417843] 线程冲突问题。
+    监听全局鼠标划词动作，并支持优雅地停止。
     """
-    def __init__(self, callback: Callable[[Dict[str, Any]], None]):
+    def __init__(self, callback: Callable[[Dict[str, Any]], None], shutdown_event: threading.Event):
         self.callback = callback
+        self.shutdown_event = shutdown_event
         self._last_text = ""
-        # 创建一个线程安全的队列，用于在监听线程和工作线程之间传递任务
         self.task_queue = queue.Queue()
+        self._press_pos: Optional[Tuple[int, int]] = None
+        self.MIN_DRAG_DISTANCE = 10
 
     def _selection_worker(self):
-        """
-        这是一个在独立线程中运行的工作函数。
-        它会持续等待任务，并安全地执行划词捕获逻辑。
-        """
-        while True:
+        """在独立线程中运行的工作函数，安全地执行划词捕获。"""
+        while not self.shutdown_event.is_set():
             try:
-                # 阻塞式等待，直到队列中有任务
-                _ = self.task_queue.get()
+                # 使用超时get，使其能够周期性地检查关闭信号
+                task = self.task_queue.get(timeout=1.0)
+                if task is None: # 显式哨兵值，用于快速退出
+                    break
                 
                 selection_data = get_selected_text()
                 
-                if selection_data and selection_data['data'] != self._last_text:
-                    self._last_text = selection_data['data']
-                    self.callback(selection_data)
-
-            except Exception as e:
-                logging.error(f"划词工作线程发生错误: {e}", exc_info=True)
-            finally:
-                # 标记任务完成
+                if selection_data and selection_data.get('data', '').strip():
+                    current_text = selection_data['data']
+                    if current_text != self._last_text:
+                        self._last_text = current_text
+                        self.callback(selection_data)
+                    else:
+                        logging.debug("捕获到与上次相同的文本，已忽略。")
+                else:
+                    self._last_text = ""
+                
+                # --- 关键修复：仅在成功获取并处理任务后调用 task_done ---
                 self.task_queue.task_done()
 
+            except queue.Empty:
+                continue # 超时是正常现象，继续循环检查关闭信号
+            except Exception as e:
+                logging.error(f"划词工作线程发生错误: {e}", exc_info=True)
+        
+        logging.info("划词工作线程已停止。")
+
     def _on_click(self, x, y, button, pressed):
-        """
-        pynput 鼠标点击事件的回调函数。
-        这个函数现在非常轻量，只负责向队列中添加一个任务。
-        """
-        if button == mouse.Button.left and not pressed:
-            # 放入一个简单的信号，通知工作线程开始工作
-            if self.task_queue.empty(): # 防止队列中任务积压
-                self.task_queue.put("GET_SELECTION")
+        """pynput 鼠标事件回调。"""
+        if button == mouse.Button.left:
+            if pressed:
+                self._press_pos = (x, y)
+            else:
+                if self._press_pos:
+                    dist = math.sqrt((x - self._press_pos[0])**2 + (y - self._press_pos[1])**2)
+                    if dist > self.MIN_DRAG_DISTANCE:
+                        logging.debug(f"检测到有效划词动作 (拖拽距离: {dist:.2f}px)，即将捕获文本。")
+                        if self.task_queue.empty():
+                            self.task_queue.put("GET_SELECTION")
+                    else:
+                        logging.debug(f"检测到单击动作 (拖拽距离: {dist:.2f}px)，已忽略。")
+                    self._press_pos = None
 
     def run(self):
-        """
-        启动鼠标监听器和划词工作线程。
-        """
-        # 启动在后台运行的划词工作线程
+        """启动鼠标监听器和工作线程，并等待关闭信号。"""
         worker_thread = threading.Thread(target=self._selection_worker, name="SelectionWorkerThread", daemon=True)
         worker_thread.start()
 
+        listener = mouse.Listener(on_click=self._on_click)
+        listener.start()
+
         logging.info("划词监听器正在运行...")
-        with mouse.Listener(on_click=self._on_click) as listener:
-            listener.join()
+        
+        # 等待主线程发出关闭信号
+        self.shutdown_event.wait()
+
+        # 停止监听器和工作线程
+        listener.stop()
+        self.task_queue.put(None) # 发送哨兵值以停止工作线程
+        worker_thread.join(timeout=2.0) # 等待工作线程退出
+
+        logging.info("划词监听器已停止。")
 

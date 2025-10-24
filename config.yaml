@@ -14,9 +14,22 @@ server:
   host: "127.0.0.1"
   port: 8765
 
+# Screenshot settings
+screenshot:
+  overlay_alpha: 0.2
+  border_color: "#007aff"
+  border_width: 2
+  
+  # Stylish preview window settings
+  preview_bg: "#2e2e2e"                 # 预览窗口背景色
+  preview_button_bg: "#4a4a4a"          # 按钮背景色
+  preview_button_fg: "#ffffff"          # 按钮前景色 (文字)
+  preview_button_active_bg: "#5a5a5a"  # 按钮激活时的背景色
+
 
 # Settings related to automated testing.
 testing:
   # The directory where screenshots captured during unit tests will be saved.
   # This path is relative to the project's root directory.
   screenshot_output_path: "tests/output/"
+
